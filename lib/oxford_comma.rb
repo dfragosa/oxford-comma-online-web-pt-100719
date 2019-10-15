@@ -2,21 +2,19 @@
 array =[""]
 def oxford_comma(array)
    if array.length == 1
-     array.join
+     array.join     #return str no added formating
     elsif array.size == 2
    # array.insert(-2,'and')
-    array[-2] << " and "
+    array[-2] << " and " #adds 'and' for 2 element
    # array[0..1].join("and")
    # array.join("and")
   array.join
    
     elsif array.length > 2
     array[-1].prepend "and "
-	array.join(", ")
+	array.join(", ") #adds comman &final and for 3 elements
      end 
-   
-  
- end
+    end
 
 
 oxford_comma(array)
